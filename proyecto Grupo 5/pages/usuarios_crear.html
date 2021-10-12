@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Usuarios Crear</title>
+  </head>
+  <body>
+    <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <img src="../Imagenes/p-paisa copia.png" alt="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="../index.html" class="nav-link px-2 text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a></li>
+          <li><a href="contacto.html" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Buscar">
+        </form>
+
+        <div class="text-end">
+          <a href="iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Iniciar Secion</a>
+          <a href="usuarios_crear.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Registrate</a>
+        </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>   
+</header>
+
+
+    <section>
+      <h1>CREACIÓN USUARIO</h1>
+    
+    
+      <fieldset>
+        <legend>DATOS BASICOS</legend>
+        <form action="menu_principal.html" method="POST" autocomplete="off">
+          
+          <label for="nombres">Nombres</label><br />
+          <input
+            type="text"
+            id="nombres"
+            name="nombres"
+            placeholder="Ingrese el nombre"
+            tabindex="1"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="apellidos">Apellidos</label><br />
+          <input
+            type="text"
+            id="apellidos"
+            name="apellidos"
+            placeholder="Ingrese los apellidos"
+            tabindex="2"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="correo">Email</label><br />
+          <input
+            type="email"
+            id="correo"
+            name="correo"
+            placeholder="Ingrese el email"
+            tabindex="3"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="celular">Celular</label><br />
+          <input
+            type="number"
+            id="celular"
+            name="celular"
+            placeholder="Ingrese el celular"
+            tabindex="4"
+            size="60"
+            required
+          />
+          <br /><br />
+
+          <label for="direccion">Dirección</label><br/>
+          <textarea
+            name="direccion"
+            id="direccion"
+            cols="46"
+            rows="5"
+            tabindex="5"
+            required
+          ></textarea>
+          <br /><br />
+
+          <button type="submit">Guardar</button>
+          <button type="reset">Cancelar</button>
+        </form>
+        
+      </fieldset>
+      <fieldset>
+        
+        <br/>
+<footer class="p-3 bg-dark text-white" class="container">
+
+  <h5>
+    Ubicanos: 
+    Calle 23 #4-56 Sector los Choros
+    Cúcuta - Colombia
+  </h5>
+  <h5>
+    Teléfono:
+    +57-60-5836641
+    +57-60-5889977
+  </h5>
+</footer>
+      </fieldset>
+    </section>
+
+    <script src="../assets/js/bootstrap.js"></script>
+  </body>
+</html>

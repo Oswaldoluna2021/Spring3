@@ -1,0 +1,153 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <title>Pagos - EL PAISA</title>
+</head>
+
+<body>
+
+    <header class="p-3 bg-dark text-white">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <img src="../Imagenes/p-paisa copia.png" alt="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+          <li><a href="../index.html" class="nav-link px-2 text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a></li>
+          <li><a href="contacto.html" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
+        </ul>
+
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Buscar">
+        </form>
+
+        <div class="text-end">
+            <a href="iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Iniciar Secion</a>
+            <a href="usuarios_crear.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Registrate</a>
+          </div>
+      </div>
+    </div>
+    <div class="b-example-divider"></div>   
+</header>
+
+
+
+    <h3>RESUMEN DE LA TRANSACCION</h3>
+    <label for="Nombre">Nombres</label><br />
+    <input type="text"  id="nombre" name="nombre" size="30"/><br />
+
+    <label for="direccion">Direccion</label><br />
+    <input type="text"  id="direccion" name="direccion" size="30"/><br />
+
+    <label for="Telefono">Teléfono:</label><br />
+    <input type="number"  id="telefono" name="telefono" size="30"/><br />
+
+    <h3>PRODUCTOS A CANCELAR</h3>
+
+    <label for="ropa">Tipo de Producto</label>
+
+<table border="1" cellspacing="0" width="30%">
+    <thead>
+        <tr>
+            <th>Calzado</th>
+            <th width="50%">
+                <select name="calzado" id="calzado">
+                    <option value="">Ninguno</option>
+                    <option value="dama">Dama</option>
+                    <option value="caballero">Caballero</option>
+                    <option value="niño">Niño</option>
+                  </select>
+            </th>
+        </tr>
+
+        <br>
+
+        <tr>
+            <th>Ropa</th>
+            <th width="50%">
+                <select name="ropa" id="ropa">
+                    <option value="">Ninguno</option>
+                    <option value="dama">Dama</option>
+                    <option value="caballero">Caballero</option>
+                    <option value="niño">Niño</option>
+                  </select>
+            </th>
+        </tr>
+
+        <br>
+
+        <tr>
+            <th>Tecnologia</th>
+            <th width="50%">
+                <select name="tecnologia" id="tecnologia">
+                    <option value="">Ninguno</option>
+                    <option value="hogar">Hogar</option>
+                    <option value="telefonia">Telefonia</option>
+                    <option value="empresarial">Empresarial</option>
+                  </select>
+            </th>
+        </tr>
+
+    </thead>
+</table>
+
+<br>
+
+    <label for="descripcion">Descripción</label><br />
+    <textarea name="descripcion" id="descripcion" cols="48" rows="5" required></textarea><br/> <br>
+
+    <table border="1" cellspacing="0" width="30%">
+        <tr>
+            <th>Iva</th>
+                <th width="50%">
+                    <select name="iva" id="iva">
+                        <option value="">Ninguno</option>
+                         <option value="iva">19%</option>
+                         <option value="iva">dia sin Iva</option>
+                    </select>
+                 </th>
+            </tr>
+
+    </table>
+
+    <br>
+
+    <label for="total">Total a Pagar</label><br />
+    <input type="number"  id="total" name="total" size="30"/><br />
+
+    <br>
+
+    <form action="../pages/confirma_venta.html" method="post">
+    </form>
+    
+    <form action="../index.html" method="post">
+        <button type="submit">Pagar</button>
+        <button type="reset">Cancelar</button>
+        <button type="submit">Salir</button>
+    </form>
+
+          
+<footer class="p-3 bg-dark text-white" class="container">
+
+    <h5>
+      Ubicanos: 
+      Calle 23 #4-56 Sector los Choros
+      Cúcuta - Colombia
+    </h5>
+    <h5>
+      Teléfono:
+      +57-60-5836641
+      +57-60-5889977
+    </h5>
+  </footer>
+    
+    <script src="../assets/js/bootstrap.js"></script>
+</body>
+
+
+</html>
