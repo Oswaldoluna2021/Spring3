@@ -1,23 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Usuarios Crear</title>
-  </head>
-  <body>
-    <header class="p-3 bg-dark text-white">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Usuarios Crear</title>
+</head>
+
+<body>
+  <header class="p-3 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <img src="../Imagenes/p-paisa copia.png" alt="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <img src="../Imagenes/p-paisa copia.png" alt="logo"
+          class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="../index.html" class="nav-link px-2 text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a></li>
-          <li><a href="contacto.html" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
+          <li><a href="../index.html" class="nav-link px-2 text-secondary">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Inicio</font>
+              </font>
+            </a></li>
+          <li><a href="contacto.html" class="nav-link px-2 text-white">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Contacto</font>
+              </font>
+            </a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -25,106 +38,96 @@
         </form>
 
         <div class="text-end">
-          <a href="iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Iniciar Secion</a>
-          <a href="usuarios_crear.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Registrate</a>
+          <a href="iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button"
+            aria-disabled="true">Iniciar Secion</a>
         </div>
       </div>
     </div>
-    <div class="b-example-divider"></div>   
-</header>
+    <div class="b-example-divider"></div>
+  </header>
 
+  <section>
+    <h1>CREACIÓN DE USUARIO</h1>
 
-    <section>
-      <h1>CREACIÓN USUARIO</h1>
-    
-    
-      <fieldset>
-        <legend>DATOS BASICOS</legend>
-        <form action="menu_principal.html" method="POST" autocomplete="off">
-          
-          <label for="nombres">Nombres</label><br />
-          <input
-            type="text"
-            id="nombres"
-            name="nombres"
-            placeholder="Ingrese el nombre"
-            tabindex="1"
-            size="60"
-            required
-          />
-          <br /><br />
+    <fieldset>
+      <form action="menu_principal.html" method="POST" autocomplete="off">
+        <div class="p-3 mb-2 bg-secondary text-dark">
+          <table width: 80%;>
+            <tr>
+              <th id="table3">
+                <h1>Contáctanos</h1>
+                <img src="Imagenes/p-paisa copia.png" alt="">
+                <h1>El Paisa <br> Compras y Ventas <br> On Line</h1>
+        </div>
 
-          <label for="apellidos">Apellidos</label><br />
-          <input
-            type="text"
-            id="apellidos"
-            name="apellidos"
-            placeholder="Ingrese los apellidos"
-            tabindex="2"
-            size="60"
-            required
-          />
-          <br /><br />
+        </th>
+        <th>
+        <th id="table2">
+          <form method="get" action="formulariominister.java" autocomplete="on">
+            <input type="hidden" id="codigo" name="codigo" valur 500> <br />
 
-          <label for="correo">Email</label><br />
-          <input
-            type="email"
-            id="correo"
-            name="correo"
-            placeholder="Ingrese el email"
-            tabindex="3"
-            size="60"
-            required
-          />
-          <br /><br />
+            <div class="mb-3">
 
-          <label for="celular">Celular</label><br />
-          <input
-            type="number"
-            id="celular"
-            name="celular"
-            placeholder="Ingrese el celular"
-            tabindex="4"
-            size="60"
-            required
-          />
-          <br /><br />
+              <label for="text" class="form-label">Nombres:</label>
+              <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text" id="nombres"
+                name="nombres" placeholder="Ingrese el nombre" tabindex="1" size="60" required />
+            </div>
 
-          <label for="direccion">Dirección</label><br/>
-          <textarea
-            name="direccion"
-            id="direccion"
-            cols="46"
-            rows="5"
-            tabindex="5"
-            required
-          ></textarea>
-          <br /><br />
+            <div class="mb-3">
+              <label for="text" class="form-label">Apellidos:</label>
+              <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="text"
+                id="apellidos" name="apellidos" placeholder="Ingrese el apellido" tabindex="2" size="60" required />
 
-          <button type="submit">Guardar</button>
-          <button type="reset">Cancelar</button>
-        </form>
-        
-      </fieldset>
-      <fieldset>
-        
-        <br/>
-<footer class="p-3 bg-dark text-white" class="container">
+            </div>
+            <div class="mb-3">
+              <label for="celular" class="form-label">Celular</label><br />
+              <input class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" type="number"
+                id="celular" name="celular" placeholder="Ingrese el celular" tabindex="3" size="60" required />
 
-  <h5>
-    Ubicanos: 
-    Calle 23 #4-56 Sector los Choros
-    Cúcuta - Colombia
-  </h5>
-  <h5>
-    Teléfono:
-    +57-60-5836641
-    +57-60-5889977
-  </h5>
-</footer>
-      </fieldset>
-    </section>
+            </div>
 
-    <script src="../assets/js/bootstrap.js"></script>
-  </body>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Correo electronico</label>
+              <input type="email" class="form-control" aria-describedby="emailHelp" name="direccion" id="direccion"
+                tabindex="4" required>
+            </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">Direccion:</label>
+              <textarea class="form-control" name="direccion" id="direccion" cols="5" rows="3" tabindex="5"
+                required></textarea>
+            </div>
+            <button class="btn btn-primary" type="submit">Enviar</button>
+        </th>
+        </th>
+        </tr>
+
+        <tr>
+
+        </tr>
+        </table>
+        </div>
+
+      </form>
+    </fieldset>
+
+    <footer class="p-3 bg-dark text-white" class="container">
+
+      <h5>
+        Ubicanos:
+        Calle 23 #4-56 Sector los Alamos
+        Cúcuta - Colombia
+      </h5>
+      <h5>
+        Teléfono:
+        +57-60-5836641
+        +57-60-5889977
+      </h5>
+    </footer>
+
+  </section>
+
+  <script src="../assets/js/bootstrap.js"></script>
+</body>
+
 </html>

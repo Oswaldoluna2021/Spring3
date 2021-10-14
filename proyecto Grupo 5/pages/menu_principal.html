@@ -2,24 +2,35 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
-    <title>Menu Principal</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <title>Menu Principal</title>
 </head>
 
 <body>
-    <header class="p-3 bg-dark text-white">
+  <header class="p-3 bg-dark text-white">
     <div class="container">
       <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-        <img src="../Imagenes/p-paisa copia.png" alt="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-        <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+        <img src="../Imagenes/p-paisa copia.png" alt="logo"
+          class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+        <svg class="bi me-2" width="40" height="32">
+          <use xlink:href="#bootstrap"></use>
+        </svg>
 
         <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-          <li><a href="../index.html" class="nav-link px-2 text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a></li>
-          <li><a href="contacto.html" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
+          <li><a href="../index.html" class="nav-link px-2 text-secondary">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Inicio</font>
+              </font>
+            </a></li>
+          <li><a href="contacto.html" class="nav-link px-2 text-white">
+              <font style="vertical-align: inherit;">
+                <font style="vertical-align: inherit;">Contacto</font>
+              </font>
+            </a></li>
         </ul>
 
         <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -27,108 +38,140 @@
         </form>
 
         <div class="text-end">
-          <a href="iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Iniciar Secion</a>
-          <a href="usuarios_crear.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Registrate</a>
+          <a href="iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button"
+            aria-disabled="true">Iniciar Secion</a>
+          <a href="usuarios_crear.html" type="button" class="btn btn-warning me-2" role="button"
+            aria-disabled="true">Registrate</a>
         </div>
       </div>
     </div>
-    <div class="b-example-divider"></div>   
-</header>
-    
-<h2>El Paisa. Compras y Ventas on line</h2>
-    
+    <div class="b-example-divider"></div>
+  </header>
+  <br>
 
-    <fieldset>
-        <form action="../pages/Pago_final.html" method="post">
-            <h3>LOS PRODUCTOS MÁS COMPRADOS</h3>
-            <h3>
-                Por favor selecciona los productos que deseas adquirir y luego haz
-                click en el botón "pagar"
-            </h3>
+  <fieldset>
+    <form action="Pago_final.html" method="post">
+      <div class="p-3 mb-2 bg-warning text-black">
+        <h3 style="text-align: center;">LOS PRODUCTOS MÁS COMPRADOS</h3>
+      </div>
+
+      <br>
+      <table width="100%">
+        <tr>
+          <th>
             <input type="checkbox" id="Celular" name="articulo" value="Celular" tabindex="1" />
-            <label ali for="Celular">Celular </label>
+            <label ali for="Celular">Celular </label> <br>
             <img src="../Imagenes/celular.png" alt="" />
-            <br />
-
+          </th>
+          <th>
             <input type="checkbox" id="portatil" name="articulo" value="portatil" tabindex="2" />
-            <label for="portatil">Portátil </label>
+            <label for="portatil">Portátil </label><br>
             <img src="../Imagenes/portatil.png" alt="" />
-            <br />
-
+          </th>
+          <th>
             <input type="checkbox" id="televisor" name="articulo" value="televisor" tabindex="3" />
-            <label for="televisor">televisor </label>
+            <label for="televisor">televisor </label><br>
             <img src="../Imagenes/televisor.png" alt="" />
-            <br />
-
-            <input type="checkbox" id="Bicicleta" name="articulo" value="Bicicleta" tabindex="4" />
-            <label for="Bicicleta">Bicicleta </label>
-            <img src="../Imagenes/bicicleta.png" alt="" />
-            <br />
-
-            <input type="checkbox" id="Ollas" name="articulo" value="Ollas" tabindex="5" />
-            <label for="Ollas">Ollas </label>
-            <img src="../Imagenes/ollas.png" alt="" />
-            <br />
-
-            <h3>LAS MEJORES OFERTAS</h3>
-
-            <br />
-
-            <input type="checkbox" id="OfertaTV" name="articulo" value="OfertaTV" tabindex="6" />
-            <label for="OfertaTV">OfertaTV </label>
-            <img src="../Imagenes/tv oferta.png" alt="" />
-            <br />
-
-            <input type="checkbox" id="NeveraOferta" name="articulo" value="NeveraOferta" tabindex="7" />
-            <label for="NeveraOferta">NeveraOferta </label>
-            <img src="../Imagenes/nevera oferta.png" alt="" />
-            <br />
-
-            <input type="checkbox" id="Microfono" name="articulo" value="Microfono" tabindex="8" />
-            <label for="Microfono">Microfono </label>
-            <img src="../Imagenes/microfono oferta.png" alt="" />
-            <br />
-
-            <input type="checkbox" id="Herramientas" name="articulo" value="Herramientas" tabindex="9" />
-            <label for="Herramientas">Herramientas </label>
-            <img src="../Imagenes/herramienta oferta.png" alt="" />
-            <br />
-
+          </th>
+          <th>
             <input type="checkbox" id="Loreal" name="articulo" value="Loreal" tabindex="10" />
-            <label for="Loreal">Loreal </label>
+            <label for="Loreal">Loreal </label><br>
             <img src="../Imagenes/loreal.png" alt="" />
-            <br />
-
+          </th>
+        </tr>
+      </table>
+      <br>
+      <table width="100%">
+        <div class="p-3 mb-2 bg-warning text-black">
+          <h3 style="text-align: center;">LOS MEJOR PARA EL HOGAR</h3>
+        </div>
+        <br>
+        <tr>
+          <th>
             <input type="checkbox" id="Maquillaje" name="articulo" value="Maquillaje" tabindex="11" />
-            <label for="Maquillaje">Maquillaje </label>
+            <label for="Maquillaje">Maquillaje </label><br>
             <img src="../Imagenes/maquillaje.png" alt="" />
-            <br />
-            <button type="submit">Pagar</button>
-            <button type="reset">Cancelar</button>
-        </form>
-        <form action="../index.html" method="post">
-            <button type="submit">Salir</button>
-        </form>
-    </fieldset>
-    <fieldset>
-        <h3>Elija su producto con confianza y la garantía de su tienda amiga</h3>
-    </fieldset>
+          </th>
+          <th>
+            <input type="checkbox" id="OfertaTV" name="articulo" value="OfertaTV" tabindex="6" />
+            <label for="OfertaTV">OfertaTV </label><br>
+            <img src="../Imagenes/tv oferta.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="NeveraOferta" name="articulo" value="NeveraOferta" tabindex="7" />
+            <label for="NeveraOferta">NeveraOferta </label><br>
+            <img src="../Imagenes/nevera oferta.png" alt="" />
+          </th>
+        </tr>
+      </table>
+      <br>
+      <table width="100%">
 
-<br/>
+        <div class="p-3 mb-2 bg-warning text-black">
+          <h3 style="text-align: center;">LAS MEJORES PROMOCIONES</h3>
+        </div>
+
+        <br>
+        <tr>
+          <th>
+            <input type="checkbox" id="Microfono" name="articulo" value="Microfono" tabindex="8" />
+            <label for="Microfono">Microfono </label><br>
+            <img src="../Imagenes/microfono oferta.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="Bicicleta" name="articulo" value="Bicicleta" tabindex="4" />
+            <label for="Bicicleta">Bicicleta </label><br>
+            <img src="../Imagenes/bicicleta.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="Herramientas" name="articulo" value="Herramientas" tabindex="9" />
+            <label for="Herramientas">Herramientas </label><br>
+            <img src="../Imagenes/herramienta oferta.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="Ollas" name="articulo" value="Ollas" tabindex="5" />
+            <label for="Ollas">Ollas </label><br>
+            <img src="../Imagenes/ollas.png" alt="" />
+          </th>
+        </tr>
+      </table>
+      <br>
+      <table width="100%">
+        <div class="p-3 mb-2 bg-warning text-black">
+          <h3 style="text-align: center;">LOS PRODUCTOS MÁS COMPRADOS</h3>
+        </div>
+        <tr>
+          <th>
+            
+          </th>
           
-<footer class="p-3 bg-dark text-white" class="container">
-  <h5>
-    Ubicanos: 
-    Calle 23 #4-56 Sector los Choros
-    Cúcuta - Colombia
-  </h5>
-  <h5>
-    Teléfono:
-    +57-60-5836641
-    +57-60-5889977
-  </h5>
-</footer>
+        </tr>
+      </table>
+      <br />
+    </form>
 
-    <script src="../assets/js/bootstrap.js"></script>
+    <form style="text-align: center;" action="../pages/Pago_final.html" method="post">
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-secondary" type="submit">PAGAR</button>
+        <button class="btn btn-secondary" type="submit">CANCELAR</button>
+        <a href="../index.html"><button class="btn btn-secondary" type="submit">SALIR</button></a>
+      </div>
+    </form>
+<br>
+  <footer class="p-3 bg-dark text-white" class="container">
+    <h5>
+      Ubicanos:
+      Calle 23 #4-56 Sector los Alamos
+      Cúcuta - Colombia
+    </h5>
+    <h5>
+      Teléfono:
+      +57-60-5836641
+      +57-60-5889977
+    </h5>
+  </footer>
+
+  <script src="../assets/js/bootstrap.js"></script>
 </body>
+
 </html>

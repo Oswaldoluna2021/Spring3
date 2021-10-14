@@ -1,86 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>El Paisa. Compras y Ventas On Line</title>
-  </head>
 
-  <header class="p-3 bg-dark text-white">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <img src="Imagenes/p-paisa copia.png" alt="logo" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
-          <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
-  
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-            <li><a href="index.html" class="nav-link px-2 text-secondary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Inicio</font></font></a></li>
-            <li><a href="contacto.html" class="nav-link px-2 text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Contacto</font></font></a></li>
-          </ul>
-  
-          <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
-            <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Buscar">
-          </form>
-  
-          <div class="text-end">
-            <a href="pages/iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Iniciar Secion</a>
-            <a href="pages/usuarios_crear.html" type="button" class="btn btn-warning me-2" role="button" aria-disabled="true">Registrate</a>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="assets/css/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>El Paisa. Compras y Ventas On Line</title>
+</head>
+
+<header class="p-3 bg-dark text-white">
+  <div class="container">
+    <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+      <img src="Imagenes/p-paisa copia.png" alt="logo"
+        class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+      <svg class="bi me-2" width="40" height="32">
+        <use xlink:href="#bootstrap"></use>
+      </svg>
+
+      <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+        <li><a href="index.html" class="nav-link px-2 text-secondary">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Inicio</font>
+            </font>
+          </a></li>
+        <li><a href="contacto.html" class="nav-link px-2 text-white">
+            <font style="vertical-align: inherit;">
+              <font style="vertical-align: inherit;">Contacto</font>
+            </font>
+          </a></li>
+      </ul>
+
+      <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+        <input type="search" class="form-control form-control-dark" placeholder="Buscar..." aria-label="Buscar">
+      </form>
+
+      <div class="text-end">
+        <a href="pages/iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button"
+          aria-disabled="true">Iniciar Secion</a>
+        <a href="pages/usuarios_crear.html" type="button" class="btn btn-warning me-2" role="button"
+          aria-disabled="true">Registrate</a>
       </div>
-      <div class="b-example-divider"></div>   
-  </header>
+    </div>
+  </div>
+  <div class="b-example-divider"></div>
+</header>
 
+<section>
+  <br>
+  <h1> El Paisita Compras y Ventas on line</h1>
+  <br>
 
-  <section>
-<br>
-<br>
-<h1>   El Paisita Compras y Ventas on line</h1>
-<br>
-<table>
-  <tr>
-    <th>
-      
-        <fieldset >
-          <h3>LOS PRODUCTOS MÁS COMPRADOS</h3>
-          <img src="Imagenes/imagenes.png" alt="">
-        </fieldset>
-      </section>
-    </th>
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Imagenes/ofertas.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/ofertas2.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="Imagenes/imagenes.png" class="d-block w-100" alt="...">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <br>
+  <div style="text-align: center;">
+    <h1>Articulos Mas Vendidos</h1>
+    <table width="100%">
+      <tr>
+        <th><img src="Imagenes/nevera oferta.png" class="rounded" alt="..."></th>
+        <th><img src="Imagenes/maquillaje.png" class="rounded" alt="..."></th>
+        <th><img src="Imagenes/tv oferta.png" class="rounded" alt="..."></th>
+      </tr>
+  </table>
+  </div>
+  <br>
+  <div style="text-align: center;">
+    <h1>Articulos en Promocion</h1>
+    <table width="100%">
+      <tr>
+    <th><img src="Imagenes/televisor.png" alt=""></th>
+    <th><img src="Imagenes/portatil.png" alt=""></th>
+    <th><img src="Imagenes/ollas.png" alt=""></th>
+    <th><img src="Imagenes/microfono oferta.png" alt=""></th>
+    <th><img src="Imagenes/loreal.png" alt=""></th>
   </tr>
-
-  <tr>
-    <th>
-      <section>
-        <fieldset>
-          <h3>LAS MEJORES PROMOCIONES</h3>
-          <img src="Imagenes/ofertas.png" alt="">
-        </fieldset>
-      </section>
-    </th>
-  </tr>
-
 </table>
+  </div>
+  <br>
+  <footer class="p-3 bg-dark text-white" class="container">
+    <h5>
+      Ubicanos:
+      Calle 23 #4-56 Sector los Alamos
+      Cúcuta - Colombia
+    </h5>
+    <h5>
+      Teléfono:
+      +57-60-5836641
+      +57-60-5889977
+    </h5>
+  </footer>
 
-      
-<footer class="p-3 bg-dark text-white" class="container">
-  <h5>
-    Ubicanos: 
-    Calle 23 #4-56 Sector los Choros
-    Cúcuta - Colombia
-  </h5>
-  <h5>
-    Teléfono:
-    +57-60-5836641
-    +57-60-5889977
-  </h5>
-</footer>
 
-
-</body>
+  </body>
   <script src="assets/js/bootstrap.js"></script>
+
 </html>
-
-
