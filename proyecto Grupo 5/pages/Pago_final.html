@@ -92,168 +92,117 @@
     </header>
     <br />
 
-    <table class="table table-dark table-striped">
-      <tr>
-        <th colspan="3" tex><h3>RESUMEN DE LA TRANSACCION</h3></th>
-      </tr>
-      <tr>
-        <th><label for="nombre">Nombres</label><br /></th>
-        <th><label for="telefono">Telefono</label><br /></th>
-        <th><label for="direccion">Direccion</label><br /></th>
-      </tr>
+    
 
-      <tr>
-        <th>
-          <input type="text" id="nombre" class="nombre" size="20%" required />
-          <br />
-        </th>
-        <th>
-          <input
-            type="number"
-            id="telefono"
-            class="telefono"
-            size="20%"
-            required
-          />
-          <br />
-        </th>
-        <th>
-          <input
-            type="text"
-            id="direccion"
-            class="direccion"
-            size="20%"
-            required
-          />
-          <br />
-        </th>
-      </tr>
-      <tr>
-        <th><label for="cantidad">Cantidad</label><br /></th>
-        <th><label for="cantidad">Producto</label><br /></th>
-        <th><label for="cantidad">Valor</label><br /></th>
-      </tr>
+  <div class="row g-5">
+    <div class="col-md-5 col-lg-4 order-md-last">
+      <h4 class="d-flex justify-content-between align-items-center mb-3">
+        <span class="text-primary"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tu carrito</font></font></span>
+        <span class="badge bg-primary rounded-pill"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></span>
+      </h4>
+      <ul class="list-group mb-3">
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre del producto</font></font></h6>
+            <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Breve descripción</font></font></small>
+          </div>
+          <span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 12</font></font></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Segundo producto</font></font></h6>
+            <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Breve descripción</font></font></small>
+          </div>
+          <span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 8</font></font></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between lh-sm">
+          <div>
+            <h6 class="my-0"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Tercer artículo</font></font></h6>
+            <small class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Breve descripción</font></font></small>
+          </div>
+          <span class="text-muted"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 5</font></font></span>
+        </li>
+         <span class="text-success"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">- $ 5</font></font></span>
+        </li>
+        <li class="list-group-item d-flex justify-content-between">
+          <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Total (USD)</font></font></span>
+          <strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">$ 20</font></font></strong>
+        </li>
+      </ul>
 
-      <tr>
-        <th>
-          <input
-            type="number"
-            id="cantidad"
-            class="cantidad"
-            size="20%"
-            required
-          />
-          <br />
-        </th>
-        <th>
-          <input
-            type="text"
-            id="producto"
-            class="producto"
-            size="20%"
-            required
-          />
-          <br />
-        </th>
-        <th>
-          <input type="number" id="valor" class="valor" size="20%" required />
-          <br />
-        </th>
-      </tr>
+      
+    </div>
+    <div class="col-md-7 col-lg-8">
+      <h4 class="mb-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección de Envio</font></font></h4>
+      <form class="needs-validation" novalidate="">
+        <div class="row g-3">
+          <div class="col-sm-6">
+            <label for="firstName" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nombre de pila</font></font></label>
+            <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid first name is required.
+            </div>
+          </div>
 
-      <tr>
-        <th>
-          <input
-            type="number"
-            id="cantidad"
-            class="cantidad"
-            size="20%"
-            required
-          />
-          <br />
-        </th>
-        <th>
-          <input
-            type="text"
-            id="producto"
-            class="producto"
-            size="20%"
-            required
-          />
-          <br />
-        </th>
-        <th>
-          <input type="number" id="valor" class="valor" size="20%" required />
-          <br />
-        </th>
-      </tr>
+          <div class="col-sm-6">
+            <label for="lastName" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Apellido</font></font></label>
+            <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
 
-      <tr>
-        <th>
-          <input
-            type="number"
-            id="cantidad"
-            class="cantidad"
-            size="20%"
-            required
-          />
-          <br />
-        </th>
-        <th>
-          <input
-            type="text"
-            id="producto"
-            class="producto"
-            size="20%"
-            required
-          />
-          <br />
-        </th>
-        <th>
-          <input type="number" id="valor" class="valor" size="20%" required />
-          <br />
-        </th>
-      </tr>
-      <tr>
-        <th colspan="2">
-          <label for="descripcion">Descripción</label><br />
-          <textarea
-            name="descripcion"
-            id="descripcion"
-            cols="87%"
-            rows="3"
-            required
-          >
-          </textarea>
-          <br />
-        </th>
+          
+          
 
-        <th w>
-          <label for="total">Total a Pagar</label><br /><br />
-          <input type="number" id="total" name="total" required />
-        </th>
-      </tr>
+          <div class="col-md-5">
+            <label for="country" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">País</font></font></label>
+            <select class="form-select" id="country" required="">
+              <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escoger...</font></font></option>
+              <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estados Unidos</font></font></option>
+            </select>
+            <div class="invalid-feedback">
+              Please select a valid country.
+            </div>
+          </div>
 
-      <tr>
-        <th colspan="3"><form action="confirma_venta.html" method="post">
-            <button type="summit" class="btn btn-warning">Pagar</button>
+          <div class="col-md-4">
+            <label for="state" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Estado</font></font></label>
+            <select class="form-select" id="state" required="">
+              <option value=""><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Escoger...</font></font></option>
+              <option><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">California</font></font></option>
+            </select>
+            <div class="invalid-feedback">
+              Please provide a valid state.
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <label for="zip" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Cremallera</font></font></label>
+            <input type="text" class="form-control" id="zip" placeholder="" required="">
+            <div class="invalid-feedback">
+              Zip code required.
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12">
+          <label for="address" class="form-label"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Dirección</font></font></label>
+          <input type="text" class="form-control" id="address" placeholder="1234 Main St" required="">
+          <div class="invalid-feedback">
+            Please enter your shipping address.
+          </div>
+        </div>
+        <br>
+
+        <button type="summit" class="btn btn-warning">Pagar</button>
             <button type="reset" class="btn btn-warning">Cancelar</button>
             <a class="btn btn-warning" href="../index.html" role="button">Salir</a>
-            </form>
-            
-        </th>
-        
-      </tr>
-
-    </table>
+      </form>
+    </div>
+  </div>
 
     <br />
-
-    
-        
-    
-
-    
 
     <footer class="p-3 bg-dark text-white" class="container">
       <h5>Ubicanos: Calle 23 #4-56 Sector los Alamos Cúcuta - Colombia</h5>
