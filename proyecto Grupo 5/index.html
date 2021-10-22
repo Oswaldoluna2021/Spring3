@@ -37,20 +37,41 @@
       </form>
 
       <div class="text-end">
-        <a href="pages/iniciar_secion.html" type="button" class="btn btn-warning me-2" role="button"
+        <a type="button" onclick="mostrarFormulario();" class="btn btn-warning me-2" role="button"
           aria-disabled="true">Iniciar Secion</a>
-        <a href="pages/usuarios_crear.html" type="button" class="btn btn-warning me-2" role="button"
-          aria-disabled="true">Registrate</a>
-      </div>
+        </div>
     </div>
   </div>
   <div class="b-example-divider"></div>
 </header>
 
+<h1> El Paisita Compras y Ventas on line</h1>
+
+<div id="ocultar">
+    <div class="row"></div>
+    <div class="col-lg-6 m-auto">
+     
+<form action="pages/administracion.html" method="POST">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Usuario:</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Contraseña:</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+  </div>
+  <button type="submit" class="btn btn-primary" onclick="mostrar()">Iniciar Secion</button>
+</form>
+</div>
+</div>
+</div>
+
+<br>
 <section>
-  <br>
-  <h1> El Paisita Compras y Ventas on line</h1>
-  <br>
 
   <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
@@ -73,30 +94,119 @@
       <span class="visually-hidden">Next</span>
     </button>
   </div>
+
   <br>
-  <div style="text-align: center;">
-    <h1>Articulos Mas Vendidos</h1>
-    <table width="100%">
-      <tr>
-        <th><img src="Imagenes/nevera oferta.png" class="rounded" alt="..."></th>
-        <th><img src="Imagenes/maquillaje.png" class="rounded" alt="..."></th>
-        <th><img src="Imagenes/tv oferta.png" class="rounded" alt="..."></th>
-      </tr>
-  </table>
-  </div>
   <br>
-  <div style="text-align: center;">
-    <h1>Articulos en Promocion</h1>
-    <table width="100%">
-      <tr>
-    <th><img src="Imagenes/televisor.png" alt=""></th>
-    <th><img src="Imagenes/portatil.png" alt=""></th>
-    <th><img src="Imagenes/ollas.png" alt=""></th>
-    <th><img src="Imagenes/microfono oferta.png" alt=""></th>
-    <th><img src="Imagenes/loreal.png" alt=""></th>
-  </tr>
-</table>
-  </div>
+
+  <fieldset>
+    <form action="pages/Pago_final.html" method="post">
+      <div class="p-3 mb-2 bg-warning text-black">
+        <h3 style="text-align: center;">LOS PRODUCTOS MÁS COMPRADOS</h3>
+      </div>
+
+      <br>
+      <table width="100%">
+        <tr>
+          <th>
+            <input type="checkbox" id="Celular" name="articulo" value="Celular" tabindex="1" />
+            <label ali for="Celular">Celular </label> <br>
+            <img src="Imagenes/celular.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="portatil" name="articulo" value="portatil" tabindex="2" />
+            <label for="portatil">Portátil </label><br>
+            <img src="Imagenes/portatil.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="televisor" name="articulo" value="televisor" tabindex="3" />
+            <label for="televisor">televisor </label><br>
+            <img src="Imagenes/televisor.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="Loreal" name="articulo" value="Loreal" tabindex="10" />
+            <label for="Loreal">Loreal </label><br>
+            <img src="Imagenes/loreal.png" alt="" />
+          </th>
+        </tr>
+      </table>
+      <br>
+      <table width="100%">
+        <div class="p-3 mb-2 bg-warning text-black">
+          <h3 style="text-align: center;">LOS MEJOR PARA EL HOGAR</h3>
+        </div>
+        <br>
+        <tr>
+          <th>
+            <input type="checkbox" id="Maquillaje" name="articulo" value="Maquillaje" tabindex="11" />
+            <label for="Maquillaje">Maquillaje </label><br>
+            <img src="Imagenes/maquillaje.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="OfertaTV" name="articulo" value="OfertaTV" tabindex="6" />
+            <label for="OfertaTV">OfertaTV </label><br>
+            <img src="Imagenes/tv oferta.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="NeveraOferta" name="articulo" value="NeveraOferta" tabindex="7" />
+            <label for="NeveraOferta">NeveraOferta </label><br>
+            <img src="Imagenes/nevera oferta.png" alt="" />
+          </th>
+        </tr>
+      </table>
+      <br>
+      <table width="100%">
+
+        <div class="p-3 mb-2 bg-warning text-black">
+          <h3 style="text-align: center;">LAS MEJORES PROMOCIONES</h3>
+        </div>
+
+        <br>
+        <tr>
+          <th>
+            <input type="checkbox" id="Microfono" name="articulo" value="Microfono" tabindex="8" />
+            <label for="Microfono">Microfono </label><br>
+            <img src="Imagenes/microfono oferta.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="Bicicleta" name="articulo" value="Bicicleta" tabindex="4" />
+            <label for="Bicicleta">Bicicleta </label><br>
+            <img src="Imagenes/bicicleta.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="Herramientas" name="articulo" value="Herramientas" tabindex="9" />
+            <label for="Herramientas">Herramientas </label><br>
+            <img src="Imagenes/herramienta oferta.png" alt="" />
+          </th>
+          <th>
+            <input type="checkbox" id="Ollas" name="articulo" value="Ollas" tabindex="5" />
+            <label for="Ollas">Ollas </label><br>
+            <img src="Imagenes/ollas.png" alt="" />
+          </th>
+        </tr>
+      </table>
+      <br>
+      <table width="100%">
+        <div class="p-3 mb-2 bg-warning text-black">
+          <h3 style="text-align: center;">LOS PRODUCTOS MÁS COMPRADOS</h3>
+        </div>
+        <tr>
+          <th>
+            
+          </th>
+          
+        </tr>
+      </table>
+      <br />
+    </form>
+
+    <form style="text-align: center;" action="../pages/Pago_final.html" method="post">
+      <div class="d-grid gap-2 d-md-block">
+        <button class="btn btn-secondary" type="submit">PAGAR</button>
+        <button class="btn btn-secondary" type="submit">CANCELAR</button>
+        <a href="../index.html"><button class="btn btn-secondary" type="submit">SALIR</button></a>
+      </div>
+    </form>
+<br>
   <br>
   <footer class="p-3 bg-dark text-white" class="container">
     <h5>
@@ -114,5 +224,7 @@
 
   </body>
   <script src="assets/js/bootstrap.js"></script>
+  <script src="assets/js/javaScript.js"></script>
+  
 
 </html>
